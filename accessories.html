@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==================================================
+                         META
+    ================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FashionHub | Accessories</title>
+
+
+    <!-- ==================================================
+                         FONT
+    ================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================================================
+                         CSS
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="accessories.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+                         NAVBAR
+    ================================================== -->
+
+    <nav class="nav">
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <img
+                src="ChatGPT Image Jun 28, 2026, 07_09_35 PM.png"
+                alt="FashionHub Logo"
+            >
+
+            <h2>
+                FashionHub
+            </h2>
+
+        </div>
+
+
+        <!-- Navigation Links -->
+
+        <div class="links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="clothing.html">
+                Clothing
+            </a>
+
+            <a
+                href="accessories.html"
+                class="active"
+            >
+                Accessories
+            </a>
+
+            <!-- Cart -->
+
+            <button
+                class="cart-nav-btn"
+                id="cartNavBtn"
+                type="button"
+                aria-label="Open shopping cart"
+            >
+
+                🛒
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- Theme Toggle -->
+
+            <button
+                id="theme-toggle"
+                class="theme-btn"
+                type="button"
+                aria-label="Toggle dark mode"
+            >
+
+                <!-- Moon -->
+
+                <svg
+                    class="moon-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M21 12.79A9 9 0 1111.21 3
+                        7 7 0 0021 12.79z"
+                    />
+
+                </svg>
+
+
+                <!-- Sun -->
+
+                <svg
+                    class="sun-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="5"
+                    />
+
+                    <line
+                        x1="12"
+                        y1="1"
+                        x2="12"
+                        y2="3"
+                    />
+
+                    <line
+                        x1="12"
+                        y1="21"
+                        x2="12"
+                        y2="23"
+                    />
+
+                    <line
+                        x1="4.22"
+                        y1="4.22"
+                        x2="5.64"
+                        y2="5.64"
+                    />
+
+                    <line
+                        x1="18.36"
+                        y1="18.36"
+                        x2="19.78"
+                        y2="19.78"
+                    />
+
+                    <line
+                        x1="1"
+                        y1="12"
+                        x2="3"
+                        y2="12"
+                    />
+
+                    <line
+                        x1="21"
+                        y1="12"
+                        x2="23"
+                        y2="12"
+                    />
+
+                    <line
+                        x1="4.22"
+                        y1="19.78"
+                        x2="5.64"
+                        y2="18.36"
+                    />
+
+                    <line
+                        x1="18.36"
+                        y1="5.64"
+                        x2="19.78"
+                        y2="4.22"
+                    />
+
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <div
+            class="hamburger"
+            aria-label="Open menu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Mobile Overlay -->
+
+    <div class="overlay"></div>
+
+
+
+    <!-- ==================================================
+                         HERO
+    ================================================== -->
+
+    <section class="accessories-hero">
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="accessories-hero-content">
+
+            <span class="collection-tag">
+                ACCESSORIES 2026
+            </span>
+
+            <h1>
+
+                Complete
+                <span>Your Look</span>
+
+            </h1>
+
+            <p>
+
+                Discover premium accessories designed
+                to elevate your everyday style — from
+                watches and bags to caps, sunglasses
+                and more.
+
+            </p>
+
+
+            <a
+                href="#watches"
+                class="hero-shop-btn"
+            >
+
+                Explore Accessories ↓
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                         CATEGORY NAV
+    ================================================== -->
+
+    <section class="accessory-categories">
+
+        <div class="category-buttons">
+
+            <a href="#watches">
+                ⌚ Watches
+            </a>
+
+            <a href="#bags">
+                🎒 Bags
+            </a>
+
+            <a href="#caps">
+                🧢 Caps
+            </a>
+
+            <a href="#sunglasses">
+                🕶️ Sunglasses
+            </a>
+
+            <a href="#jewelry">
+                💎 Jewelry
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                         WATCHES
+    ================================================== -->
+
+    <section
+        id="watches"
+        class="category-section"
+    >
+
+        <div class="category-title">
+
+            <h2>
+                ⌚ Watches
+            </h2>
+
+            <p>
+                Timeless pieces for a modern look.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <!-- WATCH 1 -->
+
+            <article class="product-card">
+
+                <div class="card-shine"></div>
+
+                <div class="product-image">
+
+                    <img
+                        src="images/watch1.jpg"
+                        alt="Classic Black Watch"
+                    >
+
+                    <span class="sale-badge">
+                        NEW
+                    </span>
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Classic Black Watch to wishlist"
+                    >
+                        ❤
+                    </button>
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="1"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Classic Black Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦45,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WATCH 2 -->
+
+            <article class="product-card">
+
+                <div class="card-shine"></div>
+
+                <div class="product-image">
+
+                    <img
+                        src="images/watch2.jpg"
+                        alt="Luxury Silver Watch"
+                    >
+
+                    <span class="sale-badge">
+                        NEW
+                    </span>
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Luxury Silver Watch to wishlist"
+                    >
+                        ❤
+                    </button>
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="2"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Luxury Silver Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦65,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WATCH 3 -->
+
+            <article class="product-card">
+
+                <div class="card-shine"></div>
+
+                <div class="product-image">
+
+                    <img
+                        src="images/watch3.jpg"
+                        alt="Minimal Gold Watch"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Minimal Gold Watch to wishlist"
+                    >
+                        ❤
+                    </button>
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="3"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Minimal Gold Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦72,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WATCH 4 -->
+
+            <article class="product-card">
+
+                <div class="card-shine"></div>
+
+                <div class="product-image">
+
+                    <img
+                        src="images/watch4.jpg"
+                        alt="Sport Chronograph Watch"
+                    >
+
+                    <button
+                        class="wishlist-btn"
+                        type="button"
+                        aria-label="Add Sport Chronograph Watch to wishlist"
+                    >
+                        ❤
+                    </button>
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="4"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Sport Chronograph Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦58,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                            BAGS
+    ================================================== -->
+
+    <section
+        id="bags"
+        class="category-section"
+    >
+
+        <div class="category-title">
+
+            <h2>
+                🎒 Bags
+            </h2>
+
+            <p>
+                Carry your essentials in style.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/bag1.jpg"
+                        alt="Premium Crossbody Bag"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="5"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Premium Crossbody Bag
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦35,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/bag2.jpg"
+                        alt="Urban Shoulder Bag"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="6"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Urban Shoulder Bag
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦39,500
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/bag3.jpg"
+                        alt="Luxury Mini Bag"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="7"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Luxury Mini Bag
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦42,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/bag4.jpg"
+                        alt="Streetwear Backpack"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="8"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Streetwear Backpack
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦49,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                            CAPS
+    ================================================== -->
+
+    <section
+        id="caps"
+        class="category-section"
+    >
+
+        <div class="category-title">
+
+            <h2>
+                🧢 Caps
+            </h2>
+
+            <p>
+                Finish your outfit with the right detail.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/cap1.jpg"
+                        alt="Classic Black Cap"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="9"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Classic Black Cap
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦15,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/cap2.jpg"
+                        alt="Premium Logo Cap"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="10"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Premium Logo Cap
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦18,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/cap3.jpg"
+                        alt="Streetwear Cap"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="11"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Streetwear Cap
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦17,500
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/cap4.jpg"
+                        alt="Vintage Washed Cap"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="12"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Vintage Washed Cap
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦16,500
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                        SUNGLASSES
+    ================================================== -->
+
+    <section
+        id="sunglasses"
+        class="category-section"
+    >
+
+        <div class="category-title">
+
+            <h2>
+                🕶️ Sunglasses
+            </h2>
+
+            <p>
+                Sharp shades for a confident look.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/sun1.jpg"
+                        alt="Classic Black Sunglasses"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="13"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Classic Black Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦25,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/sun2.jpg"
+                        alt="Luxury Gold Sunglasses"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="14"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Luxury Gold Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦31,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/sun3.jpg"
+                        alt="Retro Frame Sunglasses"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="15"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Retro Frame Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦28,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/sun4.jpg"
+                        alt="Premium Street Sunglasses"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="16"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Premium Street Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦29,500
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                            JEWELRY
+    ================================================== -->
+
+    <section
+        id="jewelry"
+        class="category-section"
+    >
+
+        <div class="category-title">
+
+            <h2>
+                💎 Jewelry
+            </h2>
+
+            <p>
+                Small details. Big statement.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/jewelry1.jpg"
+                        alt="Silver Chain"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="17"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Silver Chain
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦22,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/jewelry2.jpg"
+                        alt="Minimal Bracelet"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="18"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Minimal Bracelet
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦18,500
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/jewelry3.jpg"
+                        alt="Premium Ring"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="19"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Premium Ring
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦20,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/jewelry4.jpg"
+                        alt="Luxury Pendant"
+                    >
+
+                    <button
+                        class="quick-view"
+                        type="button"
+                        data-product="20"
+                    >
+                        Quick View
+                    </button>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Luxury Pendant
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <h2 class="price">
+                        ₦27,000
+                    </h2>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+                         CART DRAWER
+    ================================================== -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    ></div>
+
+
+    <div
+        class="cart-drawer"
+        id="cartDrawer"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                🛒 Your Cart
+            </h2>
+
+            <button
+                class="cart-close"
+                id="cartClose"
+                type="button"
+                aria-label="Close cart"
+            >
+                &times;
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+        </div>
+
+
+        <div
+            class="cart-empty"
+            id="cartEmpty"
+        >
+
+            <div class="empty-cart-icon">
+                🛍️
+            </div>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add some accessories and they will
+                appear here.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₦0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+                type="button"
+            >
+                Proceed to Checkout →
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+                         FOOTER
+    ================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <img
+                        src="ChatGPT Image Jun 28, 2026, 07_09_35 PM.png"
+                        alt="FashionHub Logo"
+                    >
+
+                    <h2>
+                        FashionHub
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Premium fashion, modern streetwear
+                    and everyday essentials designed
+                    for your style.
+                </p>
+
+
+                <div class="footer-socials">
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SHOP -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="clothing.html">
+                    Clothing
+                </a>
+
+                <a href="accessories.html">
+                    Accessories
+                </a>
+
+                <a href="index.html#products">
+                    Gadgets
+                </a>
+
+                <a href="checkout.html">
+                    Checkout
+                </a>
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <!-- SUPPORT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 FashionHub. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with ❤️ for modern fashion.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+                         PAGE LOADER
+    ================================================== -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <img
+                src="ChatGPT Image Jun 28, 2026, 07_09_35 PM.png"
+                alt="FashionHub"
+            >
+
+            <h2>
+                FashionHub
+            </h2>
+
+            <div class="loader-line"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+                         JAVASCRIPT
+    ================================================== -->
+
+    <script src="accessories.js"></script>
+
+    <script src="theme.js"></script>
+    <script src="checkout.js"></script>
+
+
+</body>
+
+</html>

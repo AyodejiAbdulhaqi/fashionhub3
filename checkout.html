@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FashionHub | Checkout</title>
+
+    <link
+        rel="stylesheet"
+        href="checkout.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+                    NAVBAR
+    ========================================== -->
+
+<nav class="checkout-nav">
+
+    <a href="clothing.html" class="back-link">
+        ← Continue Shopping
+    </a>
+
+    <h2>
+        FashionHub
+    </h2>
+
+    <div class="checkout-nav-right">
+
+        <span class="secure-checkout">
+            🔒 Secure Checkout
+        </span>
+
+        <button
+            id="theme-toggle"
+            class="theme-btn"
+            aria-label="Toggle dark mode"
+        >
+
+            <svg
+                class="moon-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M21 12.79A9 9 0 1111.21 3
+                    7 7 0 0021 12.79z"
+                />
+            </svg>
+
+            <svg
+                class="sun-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="12" r="5"></circle>
+
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+
+        </button>
+
+    </div>
+
+</nav>
+
+    <!-- ==========================================
+                    CHECKOUT
+    ========================================== -->
+
+    <main class="checkout-container">
+
+
+        <!-- ======================================
+                    CHECKOUT HEADER
+        ====================================== -->
+
+        <div class="checkout-heading">
+
+            <span>
+                FASHIONHUB
+            </span>
+
+            <h1>
+                Checkout
+            </h1>
+
+            <p>
+                Complete your order below.
+            </p>
+
+        </div>
+
+
+        <!-- ======================================
+                    CHECKOUT GRID
+        ====================================== -->
+
+        <div class="checkout-grid">
+
+
+            <!-- ==================================
+                    CUSTOMER INFORMATION
+            ================================== -->
+
+            <section class="checkout-form">
+
+                <div class="checkout-section">
+
+                    <h2>
+                        01. Contact Information
+                    </h2>
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="08012345678"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                        DELIVERY INFORMATION
+                ================================== -->
+
+                <div class="checkout-section">
+
+                    <h2>
+                        02. Delivery Information
+                    </h2>
+
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="Enter your full delivery address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="Lagos"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                            </label>
+
+                            <input
+                                type="text"
+                                id="state"
+                                placeholder="Lagos State"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                        PAYMENT METHOD
+                ================================== -->
+
+                <div class="checkout-section">
+
+                    <h2>
+                        03. Payment Method
+                    </h2>
+
+
+                    <div class="payment-options">
+
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="paystack"
+                                checked
+                            >
+
+                            <div>
+
+                                <strong>
+                                    💳 Card / Bank Transfer
+                                </strong>
+
+                                <p>
+                                    Pay securely online.
+                                </p>
+
+                            </div>
+
+                        </label>
+
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cash"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    💵 Cash on Delivery
+                                </strong>
+
+                                <p>
+                                    Pay when your order arrives.
+                                </p>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================================
+                        PLACE ORDER
+                ================================== -->
+
+                <button
+                    class="place-order-btn"
+                    id="placeOrderBtn"
+                    type="button"
+                >
+                    Place Order →
+                </button>
+
+            </section>
+
+
+            <!-- ==================================
+                    ORDER SUMMARY
+            ================================== -->
+
+            <aside class="order-summary">
+
+                <div class="summary-header">
+
+                    <h2>
+                        Your Order
+                    </h2>
+
+                    <span id="checkoutItemCount">
+                        0 items
+                    </span>
+
+                </div>
+
+
+                <!-- Cart products appear here -->
+
+                <div
+                    class="checkout-items"
+                    id="checkoutItems"
+                >
+                </div>
+
+
+                <!-- Empty Cart -->
+
+                <div
+                    class="checkout-empty"
+                    id="checkoutEmpty"
+                >
+
+                    <div>
+                        🛒
+                    </div>
+
+                    <h3>
+                        Your cart is empty
+                    </h3>
+
+                    <p>
+                        Add products before checking out.
+                    </p>
+
+                    <a href="clothing.html">
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+
+                <!-- ==================================
+                            TOTALS
+                ================================== -->
+
+                <div class="summary-totals">
+
+                    <div>
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="checkoutSubtotal">
+                            ₦0
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong id="deliveryFee">
+                            ₦2,500
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            ₦0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==========================================
+                    SUCCESS MODAL
+    ========================================== -->
+
+    <div
+        class="success-modal"
+        id="successModal"
+    >
+
+        <div class="success-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Order Placed!
+            </h2>
+
+            <p>
+                Thank you for shopping with FashionHub.
+                Your order has been received.
+            </p>
+
+            <span id="orderNumber">
+                Order #FH000000
+            </span>
+
+            <a href="clothing.html">
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="loader">
+        <div class="loader-content">
+            <img
+                src="ChatGPT Image Jun 28, 2026, 07_09_35 PM.png"
+                alt="FashionHub logo"
+            >
+            <h2>FashionHub</h2>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+                    JAVASCRIPT
+    ========================================== -->
+
+    <script src="checkout.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
